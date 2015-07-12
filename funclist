@@ -1,0 +1,10 @@
+_AutoMode: CODE, 134 0 76
+__isr: CODE, 279 0 60
+_Timer_Init: CODE, 469 0 11
+_main: CODE, 210 0 69
+_Port_Init: CODE, 491 0 10
+__Delay: CODE, 339 0 57
+_ManualMode: CODE, 19 0 115
+_DoReset: CODE, 433 0 36
+_Beep: CODE, 396 0 37
+Total: 471
