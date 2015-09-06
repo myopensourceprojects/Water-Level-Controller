@@ -1,5 +1,5 @@
 /************************************************************************
-* 	Digital clock using pic16F73
+* 	Water Level COntroller using pic16F73
 * 	File:   main.c
 * 	Author:  Jithin Krishnan.K
 *   Rev. 0.0.1 : 12/06/2015 :  08:31 PM
