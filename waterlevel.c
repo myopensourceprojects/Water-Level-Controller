@@ -107,13 +107,19 @@ void ManualMode(void) /* Manual Mode */
              ERR_LED = OFF;
              BuzzerON = OFF;
 			 BuzzerON_F = 1;
-             while(MOTOR_ON) {
+             while(MOTOR_ON && MOTOR_ON_F = 0) { /* Manual Motor ON */
                BuzzerON = ON;
               _Delay(15);
                BuzzerON = OFF;
                MOTOR_ON_F = 1;
+	       while(MOTOR_ON);
              }  
-               
+             while(MOTOR_ON && MOTOR_ON_F == 1) { /* Manual Motor OFF */
+               MOTOR = OFF;       /* Motor OFF */
+               MOTOR_ON_F = 0;
+               MOTOR_ON_LED = OFF;
+	       while(MOTOR_ON);			
+             } 
           if (MOTOR_ON_F == HIGH && TANK_FULL == LOW ) {
               MOTOR = ON; 		 /* Motor ON */
               MOTOR_ON_LED = ON;
